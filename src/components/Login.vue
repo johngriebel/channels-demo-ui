@@ -41,6 +41,7 @@
                     console.log(response.data.token);
                     // Assuming success in every case. It's a demo; sue me.
                     localStorage.setItem('token', response.data.token);
+                    this.$router.push({name: 'landing'})
                 })
             }
         }
